@@ -506,7 +506,7 @@ export default function QRGenerator() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-primary grid place-items-center text-primary-foreground font-display font-bold">Q</div>
-            <span className="font-display font-semibold text-lg">QRForge</span>
+            <span className="font-display font-semibold text-lg">Quick Scan</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="#generator" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Generator</a>
@@ -689,8 +689,28 @@ export default function QRGenerator() {
       </section>
 
       <footer className="border-t border-border/60 py-8 text-center text-sm text-muted-foreground space-y-1">
-        <p>Built with QRForge · Client-side only, your data never leaves the browser.</p>
-        <p>© {new Date().getFullYear()} MHR Roni · Devstation IT. All rights reserved.</p>
+        <p>Built with Quick Scan · Client-side only, your data never leaves the browser.</p>
+        <p>
+          © {new Date().getFullYear()}{" "}
+          <a
+            href="https://mhrrony.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors underline underline-offset-4"
+          >
+            MHR Roni
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://devstationit.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground transition-colors underline underline-offset-4"
+          >
+            Devstation IT
+          </a>
+          . All rights reserved.
+        </p>
       </footer>
 
     </div>
@@ -983,7 +1003,7 @@ function StyleThumb({ options }: { options: Partial<QROptions> }) {
       width: 72,
       height: 72,
       type: "svg",
-      data: "https://qrforge.app",
+      data: "https://quickscan.app",
       margin: 2,
       qrOptions: { errorCorrectionLevel: "L" },
       backgroundOptions: { color: "transparent" },

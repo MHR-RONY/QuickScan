@@ -70,10 +70,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "QRForge — Stylish QR Code Generator with Logo & Custom Design" },
+      { title: "Quick Scan — Stylish QR Code Generator with Logo & Custom Design" },
       { name: "description", content: "Design beautiful, branded QR codes with custom colors, gradients, dot styles, and your logo. Free, instant, and downloadable as PNG or SVG." },
-      { name: "author", content: "QRForge" },
-      { property: "og:title", content: "QRForge — Stylish QR Code Generator" },
+      { name: "author", content: "Quick Scan" },
+      { property: "og:title", content: "Quick Scan — Stylish QR Code Generator" },
       { property: "og:description", content: "Design beautiful, branded QR codes with custom colors, gradients, dot styles, and your logo." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
