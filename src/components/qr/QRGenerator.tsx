@@ -819,14 +819,14 @@ function StyleEditor({ state: s, patch }: { state: State; patch: (p: Partial<Sta
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">
-        <div className="rounded-xl border border-border/60 bg-background/40 p-3 sm:p-4">
+        <div className="min-w-0 rounded-xl border border-border/60 bg-background/40 p-3 sm:p-4">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-[10px] uppercase tracking-wider text-muted-foreground px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">Corner</span>
             <Label className="text-sm">Border</Label>
           </div>
           <BorderPicker value={s.cornerSquareType} color={s.cornerSquareColor} onChange={(v) => patch({ cornerSquareType: v })} />
         </div>
-        <div className="rounded-xl border border-border/60 bg-background/40 p-3 sm:p-4">
+        <div className="min-w-0 rounded-xl border border-border/60 bg-background/40 p-3 sm:p-4">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-[10px] uppercase tracking-wider text-muted-foreground px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">Corner</span>
             <Label className="text-sm">Center</Label>
